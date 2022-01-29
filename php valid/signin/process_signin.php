@@ -23,5 +23,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "name:" . $name . "<br>email : " . $email . "<br>password:" . $pass;
     }
 } else {
-    header('location:hsignin.php?errors=Error!You must submit the form.');
+    header('location:signin.php?errors=Error!You must submit the form.');
 }
