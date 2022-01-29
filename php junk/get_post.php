@@ -5,4 +5,3 @@
 
             echo $name;
             echo $email;
-?>
