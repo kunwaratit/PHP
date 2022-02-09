@@ -26,13 +26,14 @@
         color:azure;
     }
     .navbar {
-    height: 60px;
+    
     display: flex;
     background: rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center;
     padding: 0px 0px 0px 20px;
-    border-bottom: 1px solid rgb(65, 60, 60);
+    
+    border-bottom: 1px solid rgb(65, 60, 60,0.568);
     box-shadow: 0px 4px rgba(97, 93, 93, 0.301);
     top:0px;
     position: sticky;
@@ -43,6 +44,8 @@
     font-weight: bold;
     color: rgb(255, 147, 59);
 display: inline;
+border-bottom: 1px solid rgba(226, 226, 226, 0.568);
+margin: 0px;
     }
 
     .links {
@@ -129,7 +132,7 @@ display: inline;
 
     .footer-content {
         color: cadetblue;
-        background: rgb(41, 1, 73);
+        background: rgb(1, 8, 73);
         display: flex;
         flex-wrap: wrap;
     }
@@ -142,6 +145,5 @@ display: inline;
         color: rgb(37, 46, 54);
         background: rgb(119, 118, 118);
         margin: 15px 90px;
-
         border: 1px solid black;
     }

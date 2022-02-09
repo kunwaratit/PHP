@@ -1,0 +1,4 @@
+mysql -database- add data ,image,name,price,discount,id
+php - to create cart-> session is used
+    -to enter to page 
+js- to validate form ,patternmatching

@@ -17,6 +17,7 @@ if (isset($_POST['addCart'])) {
     }
 }
 
+
 ?>
 
 <html>
@@ -73,6 +74,7 @@ if (isset($_POST['addCart'])) {
                 <a href="index.php" style="text-decoration:none;color: white;">X</a></button>
         </div>
     </div>
+    <div style="height:200px"></div>
     <?php require_once('format/footer.php') ?>
 </body>
 
