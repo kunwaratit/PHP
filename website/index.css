@@ -1,0 +1,147 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: cursive;
+        text-decoration: none;
+        list-style-type: none;
+
+    }
+
+                                                             
+    .info button {
+        color: rgba(0, 0, 0, 0.829);
+        background: rgb(255, 255, 255);
+    border: 1px solid rgb(80, 79, 79);
+    margin-top: 4px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    }
+    .info button:hover{
+        background-color: rgba(77, 77, 77, 0.301);
+    }
+    .info button:active{
+        background-color: rgb(0, 0, 0);
+        color:azure;
+    }
+    .navbar {
+    height: 60px;
+    display: flex;
+    background: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    border-bottom: 1px solid rgb(65, 60, 60);
+    box-shadow: 0px 4px rgba(97, 93, 93, 0.301);
+    top:0px;
+    position: sticky;
+    }
+
+    .navbar .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 147, 59);
+display: inline;
+    }
+
+    .links {
+    display: flex;
+    font-size: 24px;
+
+    }
+    .links li {
+    padding: 15px;
+    
+    }
+    .links li a{
+       color: black;
+        }
+    .main {
+    margin: 20px;
+ 
+    } 
+    .books {
+    margin: 5px;
+    overflow: auto;
+    }
+
+    .cover {
+    margin: 15px;
+
+    }
+    .cover:hover{
+        border-bottom: 2px solid rgb(83, 81, 81);
+        box-shadow: 8px 2px rgba(97, 93, 93, 0.301);
+        color:rgb(251, 63, 63);
+    }
+
+    .cover img{
+    height: 250px;
+    width: 200px;
+  
+    }
+    #connect span{
+        margin: 5px;
+        border-radius: 8px;
+         padding: 10px 0px 4px 4px;
+    }
+   #facebook{
+        background-color: rgb(0, 98, 255); 
+       
+    }#insta{
+       
+        background-image:linear-gradient(rgb(180, 9, 202),red,rgb(255, 136, 0));
+    }
+    #twitter{
+        background-color: rgb(0, 140, 255); 
+       
+    }#github{
+        background-color:rgb(32, 32, 32); 
+    }
+    
+    .categories {
+        color: rgb(45, 98, 9);
+        font-size: 20px;
+        padding-left: 25px;
+        text-decoration: underline;
+    }
+
+    i {
+        color: white;
+        font-size: 24px;
+        margin: 5px;
+    }
+
+    .sample span {
+        color: white;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+
+    .footer .copy {
+        text-align: center;
+        background: rgba(1, 8, 73, 0.938);
+        color: cadetblue;
+
+
+    }
+
+    .footer-content {
+        color: cadetblue;
+        background: rgb(41, 1, 73);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer .sample {
+        margin: 25px;
+    }
+
+    .whitespace {
+        color: rgb(37, 46, 54);
+        background: rgb(119, 118, 118);
+        margin: 15px 90px;
+
+        border: 1px solid black;
+    }
