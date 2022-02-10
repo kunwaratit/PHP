@@ -1,5 +1,6 @@
 <?php
 session_start();
+//adding cart
 if (isset($_POST['addCart'])) {
     if (isset($_SESSION['cart'])) {
         $count = count($_SESSION['cart']);
@@ -16,20 +17,18 @@ if (isset($_POST['addCart'])) {
         );
     }
 }
-
-
 ?>
-
+<!--html-->
 <html>
 
 <head>
-
 </head>
 
 <body>
     <?php require_once('format/header.php') ?>
     <div style="display:flex;justify-content:center;">
         <div>
+            <!--styling-->
             <style>
                 table {
                     font-size: 20px;
@@ -54,15 +53,13 @@ if (isset($_POST['addCart'])) {
                 if (isset($_SESSION['cart'])) {
                     foreach ($_SESSION['cart'] as $key => $value) {
                         $total = $total + $value['price'] * $value['quantity'];
-                        echo "<tr><td>  $value[name] </td>
-                <td>  $value[price] </td>
-                <td >  $value[quantity]  </td>
-                
-               </tr>";
+                        echo    "<tr>   
+                                    <td>  $value[name] </td>
+                                    <td>  $value[price] </td>
+                                    <td >  $value[quantity]  </td>
+                                </tr>";
                     }
                 }
-
-
                 ?>
                 <tr>
                     <td colspan="2">Total</td>
@@ -75,8 +72,8 @@ if (isset($_POST['addCart'])) {
         </div>
     </div>
     <div style="height:200px"></div>
+    <!--footer-->
     <?php require_once('format/footer.php') ?>
 </body>
-
 
 </html>

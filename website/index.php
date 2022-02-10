@@ -34,7 +34,7 @@ if (isset($_POST['addCart'])) {
         <!--header-->
         <?php require_once('format/header.php') ?>
         <!--Holder-->
-        <div class="mainx">
+        <div class="mainx" >
             <!--quotes-->
             <div class="whitespace">
                 <p style="text-align: center; font-size:32px; margin:0px 100px ; "> <q> A book is a version of the

@@ -6,7 +6,7 @@
 
 <body>
     <?php require_once('format/header.php') ?>
-    <div id=contact-content>
+    <div id="contact-content">
         <h1 style="text-align: center; color:white;">Contact Us</h1>
         <p>If any Queries you can Message...<br>
 
