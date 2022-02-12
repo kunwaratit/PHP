@@ -3,3 +3,15 @@ php - to create cart-> session is used
     -to enter to page 
 js  - to validate form ,patternmatching
     - to show and hide login form 
+
+
+
+    problems
+        1.  cart  ma image aayena
+        2. cart ko logo veteyna fontawesome 5 veteyna
+solved=>3.categories ma novel ma click garda novel ma gayenw  if contact bata gayo vaney  
+solved=>4.novels ma jada mathi ko sticky position ley lukaidiyo content   mathi whitespace rakhda tah vayo tra harek thau tyo jhyau lagyo any idea?
+        5.cart le ramrari kamm garya xa but cart bata bahira niskada cart count 0 dekhaunxa
+        6. search le kamm gardaina
+solved=>7.mobile view         
+        8. login vayepaxi session end nahuda samma tyo logged in hunu paryo

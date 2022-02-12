@@ -4,12 +4,14 @@ if (isset($_POST['addCart'])) {
     if (isset($_SESSION['cart'])) {
         $count = count($_SESSION['cart']);
         $_SESSION['cart'][$count] = array(
+            "image" => $_POST['image'],
             "name" => $_POST['bookname'],
             "price" => $_POST['price'],
             'quantity' => $_POST['quantity']
         );
     } else {
         $_SESSION['cart'][0] = array(
+            "image" => $_POST['image'],
             "name" => $_POST['bookname'],
             "price" => $_POST['price'],
             'quantity' => $_POST['quantity']
@@ -17,6 +19,7 @@ if (isset($_POST['addCart'])) {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +28,7 @@ if (isset($_POST['addCart'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+
 </head>
 
 <body>
@@ -34,10 +37,10 @@ if (isset($_POST['addCart'])) {
         <!--header-->
         <?php require_once('format/header.php') ?>
         <!--Holder-->
-        <div class="mainx" >
+        <div class="mainx">
             <!--quotes-->
             <div class="whitespace">
-                <p style="text-align: center; font-size:32px; margin:0px 100px ; "> <q> A book is a version of the
+                <p style="text-align: center; "> <q> A book is a version of the
                         world. If
                         you
                         do not like it, ignore it; or offer your own version in return.
@@ -45,7 +48,7 @@ if (isset($_POST['addCart'])) {
                 </p>
             </div>
             <!--container for books-->
-            <div class="main"><span class="categories">New Arrivals </span><br>
+            <div class="main" id=""><span class="categories">New Arrivals </span><br>
                 <div class="books" style="display: flex;">
                     <?php
                     $con = mysqli_connect("localhost", "root", "");
@@ -61,16 +64,24 @@ if (isset($_POST['addCart'])) {
 
                                 <form action="" method="POST">
                                     <img src="<?php echo $product['image']; ?>" alt="" srcset="" name=image>
-                                    <div class="info" style="text-align: center;">
-                                        <h4><?php echo $product['name']; ?></h4>
-                                        <h5>Price : <?php echo $product['price']; ?></h5>
-                                        <p>Discount : <?php echo $product['discount']; ?> </p>
+                                    <div class="info">
+                                        <h4>
+                                            <?php echo $product['name']; ?>
+                                        </h4>
+                                        <h5>Price :
+                                            <?php echo $product['price']; ?>
+                                        </h5>
+                                        <p>Discount :
+                                            <?php echo $product['discount']; ?>
+                                        </p>
+                                        <input type="hidden" name="image" value="<?php echo $product['image']; ?>">
                                         <input type="hidden" name="bookname" value="<?php echo $product['name']; ?>">
                                         <input type="hidden" name="price" value="<?php echo $product['price']; ?>">
                                         <input type="number" name="quantity" value="1">
                                         <button type="submit" name="addCart">Add to cart</button>
                                     </div>
                                 </form>
+
                             </div>
                     <?php
                         }
@@ -82,13 +93,13 @@ if (isset($_POST['addCart'])) {
             <!--quotes-->
             <div class="whitespace">
 
-                <p style="text-align: center; font-size:32px; margin:0px 100px ; "> <q>That’s the thing about books.
+                <p style="text-align: center;  "> <q>That’s the thing about books.
                         They let you travel without moving your feet.</q>
                 </p>
             </div>
 
             <!--container for books-->
-            <div class="main"><span class="categories"> Novels </span><br>
+            <div class="main" id="novels"><span class="categories"> Novels </span><br>
 
                 <div class="books" style="display: flex;">
                     <?php
@@ -105,9 +116,15 @@ if (isset($_POST['addCart'])) {
                                 <form action="" method="POST">
                                     <img src="<?php echo $product['image']; ?>" alt="" srcset="" name=image>
                                     <div class="info" style="text-align: center;">
-                                        <h4><?php echo $product['name']; ?></h4>
-                                        <h5>Price : <?php echo $product['price']; ?></h5>
-                                        <p>Discount : <?php echo $product['discount']; ?> </p>
+                                        <h4>
+                                            <?php echo $product['name']; ?>
+                                        </h4>
+                                        <h5>Price :
+                                            <?php echo $product['price']; ?>
+                                        </h5>
+                                        <p>Discount :
+                                            <?php echo $product['discount']; ?>
+                                        </p>
                                         <input type="hidden" name="bookname" value="<?php echo $product['name']; ?>">
                                         <input type="hidden" name="price" value="<?php echo $product['price']; ?>">
                                         <input type="number" name="quantity" value="1">

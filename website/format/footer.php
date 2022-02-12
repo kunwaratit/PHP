@@ -1,10 +1,13 @@
 <div class="footer">
     <div class="footer-content">
-        <div class="sample">
-            <p style="width: 500px;">chitta is an online Bookstore where we can buy popular books. chitta also do
+        <div class="sample aj" >
+            <p>chitta is an online Bookstore where we can buy popular books. chitta also do
                 free delivery service
                 inside kathmandu .For international delivery, U need to pay an extra charges. </p>
         </div>
+        <style>
+
+        </style>
         <div class="sample contact">
             <p><span> Contact </span><br>
 
@@ -45,4 +48,15 @@
         </span><br><br>
     </p>
     <p class="copy" style="padding: 10px; ">copyright&copy;atitkunwar</p>
+
 </div>
+<?php
+$count = 0;
+if (isset($_SESSION['cart'])) {
+    $count = count($_SESSION['cart']);
+}
+?>
+<button style="float:right;position:sticky;bottom:10px;padding:10px 5px; background:green;border-radius:25px;margin-bottom:-50px;"> <a href="cart.php" style="padding:10px 5px;font-weight:600; color:white;font-size:15px;">Cart<sup style=" color:red;">
+            <?php echo $count; ?>
+        </sup>
+    </a></button>

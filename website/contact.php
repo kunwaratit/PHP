@@ -34,19 +34,7 @@
     </div>
     <?php require_once('format/footer.php') ?>
     <style>
-        #contact-content {
-            border: 2px solid rgb(145, 143, 143);
-            padding-left: 5px;
-            background-size: contain;
-            background-color: rgba(71, 71, 71, 0.739);
-            color: rgb(98, 221, 160);
-            font-size: 18px;
-            font-weight: 500;
-        }
-
-        #contact-content p {
-            font-size: 22px;
-        }
+   
     </style>
 
 </body>
